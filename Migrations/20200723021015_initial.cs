@@ -26,8 +26,8 @@ namespace ApiComanda.Migrations
                 {
                     id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    numero = table.Column<int>(nullable: false),
-                    qtde = table.Column<int>(nullable: false)
+                    numero_comanda = table.Column<int>(nullable: false),
+                    quantidade = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -40,9 +40,8 @@ namespace ApiComanda.Migrations
                 {
                     id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    nome = table.Column<string>(nullable: true),
-                    valor = table.Column<double>(nullable: false),
-                    observacao = table.Column<string>(nullable: true),
+                    prod_nome = table.Column<string>(nullable: true),
+                    prod_preco = table.Column<double>(nullable: false),
                     categoriaId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
@@ -87,13 +86,13 @@ namespace ApiComanda.Migrations
 
             migrationBuilder.InsertData(
                 table: "comanda",
-                columns: new[] { "id", "numero", "qtde" },
+                columns: new[] { "id", "numero_comanda", "quantidade" },
                 values: new object[] { 1, 1, 1 });
 
             migrationBuilder.InsertData(
                 table: "produto",
-                columns: new[] { "id", "categoriaId", "nome", "observacao", "valor" },
-                values: new object[] { 1, 1, "Pão", "Doce", 1.23 });
+                columns: new[] { "id", "categoriaId", "prod_nome", "prod_preco" },
+                values: new object[] { 1, 1, "Pão", 1.23 });
 
             migrationBuilder.InsertData(
                 table: "comandaproduto",

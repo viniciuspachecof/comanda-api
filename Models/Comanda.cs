@@ -7,15 +7,15 @@ namespace ApiComanda.Models
     {
 
         public Comanda() { }
-        public Comanda(int id, int numero, int qtde)
+        public Comanda(int id, int numero_comanda, int quantidade)
         {
             this.id = id;
-            this.numero = numero;
-            this.qtde = qtde;
+            this.numero_comanda = numero_comanda;
+            this.quantidade = quantidade;
         }
         public int id { get; set; }
-        public int numero { get; set; }
-        public int qtde { get; set; }
+        public int numero_comanda { get; set; }
+        public int quantidade { get; set; }
         public IEnumerable<ComandaProduto> comandasprodutos { get; set; }
     }
 }

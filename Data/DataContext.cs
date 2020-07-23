@@ -19,7 +19,7 @@ namespace ApiComanda.Data
 
             builder.Entity<Produto>()
                 .HasData(new List<Produto>(){
-                    new Produto(1, "Pão", 1.23, "Doce", 1)
+                    new Produto(1, "Pão", 1.23, 1)
                 });
 
             builder.Entity<Comanda>()

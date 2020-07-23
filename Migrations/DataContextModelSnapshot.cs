@@ -47,10 +47,10 @@ namespace ApiComanda.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<int>("numero")
+                    b.Property<int>("numero_comanda")
                         .HasColumnType("integer");
 
-                    b.Property<int>("qtde")
+                    b.Property<int>("quantidade")
                         .HasColumnType("integer");
 
                     b.HasKey("id");
@@ -61,8 +61,8 @@ namespace ApiComanda.Migrations
                         new
                         {
                             id = 1,
-                            numero = 1,
-                            qtde = 1
+                            numero_comanda = 1,
+                            quantidade = 1
                         });
                 });
 
@@ -98,13 +98,10 @@ namespace ApiComanda.Migrations
                     b.Property<int>("categoriaId")
                         .HasColumnType("integer");
 
-                    b.Property<string>("nome")
+                    b.Property<string>("prod_nome")
                         .HasColumnType("text");
 
-                    b.Property<string>("observacao")
-                        .HasColumnType("text");
-
-                    b.Property<double>("valor")
+                    b.Property<double>("prod_preco")
                         .HasColumnType("double precision");
 
                     b.HasKey("id");
@@ -118,9 +115,8 @@ namespace ApiComanda.Migrations
                         {
                             id = 1,
                             categoriaId = 1,
-                            nome = "Pão",
-                            observacao = "Doce",
-                            valor = 1.23
+                            prod_nome = "Pão",
+                            prod_preco = 1.23
                         });
                 });
 

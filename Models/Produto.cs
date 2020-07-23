@@ -7,18 +7,16 @@ namespace ApiComanda.Models
     {
 
         public Produto() { }
-        public Produto(int id, string nome, double valor, string observacao, int categoriaId)
+        public Produto(int id, string prod_nome, double prod_preco, int categoriaId)
         {
             this.id = id;
-            this.nome = nome;
-            this.valor = valor;
-            this.observacao = observacao;
+            this.prod_nome = prod_nome;
+            this.prod_preco = prod_preco;
             this.categoriaId = categoriaId;       
         }
         public int id { get; set; }
-        public string nome { get; set; }
-        public double valor { get; set; }
-        public string observacao { get; set; }
+        public string prod_nome { get; set; }
+        public double prod_preco { get; set; }
         public int categoriaId { get; set; }
         public Categoria categoria { get; set; }
     }

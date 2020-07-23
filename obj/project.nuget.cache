@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T8qZrVzMuAMYnJVuRqBGQ03Fv/jDLBIApkCGB+YEooCT1EtSW0uz/Q211NePrjPQkjO6zKg06f5GexF4Onpn9A==",
+  "dgSpecHash": "LsgVX3SChxAv0f0kArWAwuUF2usK47uDW9IjtPBtpUqCGzunNrEzXqgm3o4wUPO02RL3GUNZbt8fhGkfMY1fpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vinic\\Documents\\Visual Studio 2019\\ApiComanda\\ApiComanda.csproj",
+  "projectFilePath": "C:\\Users\\vinic\\Documents\\Visual Studio 2019\\comanda-api\\ApiComanda.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vinic\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.2\\microsoft.aspnetcore.jsonpatch.3.1.2.nupkg.sha512",
     "C:\\Users\\vinic\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.2\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.2.nupkg.sha512",

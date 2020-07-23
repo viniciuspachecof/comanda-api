@@ -1041,11 +1041,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\vinic\\Documents\\Visual Studio 2019\\ApiComanda\\ApiComanda.csproj",
+      "projectUniqueName": "C:\\Users\\vinic\\Documents\\Visual Studio 2019\\comanda-api\\ApiComanda.csproj",
       "projectName": "ApiComanda",
-      "projectPath": "c:\\Users\\vinic\\Documents\\Visual Studio 2019\\ApiComanda\\ApiComanda.csproj",
+      "projectPath": "C:\\Users\\vinic\\Documents\\Visual Studio 2019\\comanda-api\\ApiComanda.csproj",
       "packagesPath": "C:\\Users\\vinic\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\vinic\\Documents\\Visual Studio 2019\\ApiComanda\\obj\\",
+      "outputPath": "C:\\Users\\vinic\\Documents\\Visual Studio 2019\\comanda-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",
