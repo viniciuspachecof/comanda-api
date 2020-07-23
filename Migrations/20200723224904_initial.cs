@@ -27,7 +27,8 @@ namespace ApiComanda.Migrations
                     id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     numero_comanda = table.Column<int>(nullable: false),
-                    quantidade = table.Column<int>(nullable: false)
+                    quantidade = table.Column<int>(nullable: false),
+                    situacao = table.Column<char>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -86,8 +87,8 @@ namespace ApiComanda.Migrations
 
             migrationBuilder.InsertData(
                 table: "comanda",
-                columns: new[] { "id", "numero_comanda", "quantidade" },
-                values: new object[] { 1, 1, 1 });
+                columns: new[] { "id", "numero_comanda", "quantidade", "situacao" },
+                values: new object[] { 1, 1, 1, 'A' });
 
             migrationBuilder.InsertData(
                 table: "produto",

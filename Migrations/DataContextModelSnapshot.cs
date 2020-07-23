@@ -53,6 +53,9 @@ namespace ApiComanda.Migrations
                     b.Property<int>("quantidade")
                         .HasColumnType("integer");
 
+                    b.Property<char>("situacao")
+                        .HasColumnType("character(1)");
+
                     b.HasKey("id");
 
                     b.ToTable("comanda");
@@ -62,7 +65,8 @@ namespace ApiComanda.Migrations
                         {
                             id = 1,
                             numero_comanda = 1,
-                            quantidade = 1
+                            quantidade = 1,
+                            situacao = 'A'
                         });
                 });
 

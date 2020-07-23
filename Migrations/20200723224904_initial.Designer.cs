@@ -9,7 +9,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ApiComanda.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200723021015_initial")]
+    [Migration("20200723224904_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -55,6 +55,9 @@ namespace ApiComanda.Migrations
                     b.Property<int>("quantidade")
                         .HasColumnType("integer");
 
+                    b.Property<char>("situacao")
+                        .HasColumnType("character(1)");
+
                     b.HasKey("id");
 
                     b.ToTable("comanda");
@@ -64,7 +67,8 @@ namespace ApiComanda.Migrations
                         {
                             id = 1,
                             numero_comanda = 1,
-                            quantidade = 1
+                            quantidade = 1,
+                            situacao = 'A'
                         });
                 });
 
